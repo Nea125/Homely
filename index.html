@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homely Properties</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Homely</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-icon">&#9776;</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <section class="properties">
+                <div class="property">
+                    <img src="ocean-breeze-villas.jpg" alt="Ocean Breeze Villas">
+                    <h2>Ocean Breeze Villas</h2>
+                    <p><strong>$90,000</strong></p>
+                    <p>6 Beds, 2 Baths, 200 sqft</p>
+                    <p>8901 Pinecrest Drive</p>
+                    <p>For Sale</p>
+                </div>
+                <div class="property">
+                    <img src="forest-heights-homes.jpg" alt="Forest Heights Homes">
+                    <h2>Forest Heights Homes</h2>
+                    <p><strong>$4,600/Mo</strong></p>
+                    <p>6 Beds, 2 Baths, 200 sqft</p>
+                    <p>9012 Riverfront Way</p>
+                    <p>For Rent</p>
+                </div>
+                <div class="property">
+                    <img src="park-view-residences.jpg" alt="Park View Residences">
+                    <h2>Park View Residences</h2>
+                    <p><strong>$80,000</strong></p>
+                    <p>6 Beds, 2 Baths, 200 sqft</p>
+                    <p>678 Ocean View Drive</p>
+                    <p>For Sale</p>
+                </div>
+                <div class="property">
+                    <img src="riverfront-landing.jpg" alt="Riverfront Landing Townhomes">
+                    <h2>Riverfront Landing Townhomes</h2>
+                    <p><strong>$80,000</strong></p>
+                    <p>6 Beds, 2 Baths, 200 sqft</p>
+                    <p>678 Ocean View Drive</p>
+                    <p>For Sale</p>
+                </div>
+                <div class="property">
+                    <img src="skyline-towers.jpg" alt="Skyline Towers Condos">
+                    <h2>Skyline Towers Condos</h2>
+                    <p><strong>$80,000</strong></p>
+                    <p>6 Beds, 2 Baths, 200 sqft</p>
+                    <p>678 Ocean View Drive</p>
+                    <p>For Sale</p>
+                </div>
+                <div class="property">
+                    <img src="hillcrest-heights.jpg" alt="Hillcrest Heights Duplexes">
+                    <h2>Hillcrest Heights Duplexes</h2>
+                    <p><strong>$80,000</strong></p>
+                    <p>6 Beds, 2 Baths, 200 sqft</p>
+                    <p>678 Ocean View Drive</p>
+                    <p>For Sale</p>
+                </div>
+            </section>
+
+            <section class="filter">
+                <h3>Filter Properties</h3>
+                <form>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" value="New York City, NY">
+
+                    <label for="property-category">Property Category</label>
+                    <select id="property-category" name="property-category">
+                        <option value="house">House</option>
+                        <option value="apartment">Apartment</option>
+                    </select>
+
+                    <label>Number of Bedrooms</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="bedrooms" value="1"> 1</label>
+                        <label><input type="checkbox" name="bedrooms" value="2"> 2</label>
+                        <label><input type="checkbox" name="bedrooms" value="3"> 3</label>
+                        <label><input type="checkbox" name="bedrooms" value="4"> 4</label>
+                        <label><input type="checkbox" name="bedrooms" value="5"> 5</label>
+                        <label><input type="checkbox" name="bedrooms" value="6"> 6</label>
+                    </div>
+
+                    <label>Number of Bathrooms</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="bathrooms" value="1"> 1</label>
+                        <label><input type="checkbox" name="bathrooms" value="2"> 2</label>
+                        <label><input type="checkbox" name="bathrooms" value="3"> 3</label>
+                    </div>
+
+                    <label for="square-feet">Square Feet</label>
+                    <input type="range" id="square-feet" name="square-feet" min="500" max="10000">
+                </form>
+            </section>
+        </section>
+
+        <section class="images-section">
+            <img src="/mnt/data/20240604_100547.jpg" alt="Additional Image 1">
+            <img src="/mnt/data/20240604_100616.jpg" alt="Additional Image 2">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="location">
+                <h4>Location</h4>
+                <p>123 Street, Your City, State and Country</p>
+            </div>
+            <div class="timing">
+                <h4>Timing</h4>
+                <p>Monday - Friday: 9AM - 5PM</p>
+                <p>Saturday: Closed</p>
+            </div>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@homely.com</p>
+            </div>
+            <div class="social">
+                <h4>Follow Us</h4>
+                <p>
+                    <a href="#">Facebook</a> |
+                    <a href="#">Instagram</a> |
+                    <a href="#">Twitter</a> |
+                    <a href="#">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
